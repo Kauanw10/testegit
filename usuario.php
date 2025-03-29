@@ -6,8 +6,6 @@
        private $nome;
        private $email;
        private $senha;
-       private $pdo;
-       private $mongo;
    
        // Construtor da classe
        public function __construct($nome, $email, $senha) {
@@ -23,13 +21,6 @@
             die("Erro ao conectar ao MySQL: " . $e->getMessage());
         }
 
-        // Conectar ao MongoDB
-        try {
-            $this->mongo = new MongoDB\Client("mongodb://localhost:27017");
-            $this->mongo = $client->selectDatabase('solvettestesbd'); // Selecionando o banco de dados
-        } catch (Exception $e) {
-            die("Erro ao conectar ao MongoDB: " . $e->getMessage());
-        }
     }
    
        // Getters (métodos para acessar os atributos)
@@ -51,18 +42,6 @@
                $stmt->bindParam(':senha', $this->senha);
                $stmt->execute();
 
-               // Criando o Log de atividade para o MongoDB
-               $log = [
-                'nome' => $this->nome,
-                'email' => $this->email,
-                'acao'=> 'Cadastro de usuário',
-                'data' => new MongoDB\BSON\UTCDateTime()
-               ];
-   
-                 // Inserindo o log no MongoDB
-                 $collection = $this->mongo->selectCollection('logs');
-                 $collection->insertOne($log);
-                 
                return "Usuário cadastrado com sucesso!";
                
            } catch (PDOException $e) {
