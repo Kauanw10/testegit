@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+header{
+    justify-content: center;
+    display: flex;
+}
+nav{
+    background-color: black;
+    padding: 60px;
+}
+#logo-site{
+    width: 30%;
+}
+/* Formatação do titulo */
+.format-title{
+    justify-content: center;
+    margin-top: 40px;
+    display: flex;
+    
+}
+/* Estilização do titulo */
+.title{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 40px;
+    width: 50%;
+}
+/* formatação do button */
+.format-button{
+    justify-content: center;
+    margin-top: 60px;
+    display: flex;
+}
+/* estilização do button */
+#button{
+    background-color: white;
+    border: 1px solid rgb(72, 72, 72);
+    border-radius: 10px;
+    padding: 15px 35px;
+    cursor: pointer;
+    color: black;
+    margin: 8px;
+    text-decoration: none;
+}
+/* animação do button */
+#button:hover{
+    background-color: rgb(72, 72, 72);
+    transition: 0.4s;
+    color: white;   
+}
+/* formatação da img-capa */
+.format-img{
+    justify-content: center;
+    display: flex;
+}
+/* estilização da img-capa */
+#img-capa{
+    border-radius:30px;
+    margin-top: 70px;
+    width: 90%;
+}
+
+/* estilo do texto abaixo de "PILARES" */
+p{
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+/* formatação das colunas-pilares */
+.format-column{
+    font-family: Arial, Helvetica, sans-serif;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    flex-direction: row;
+    margin-bottom: 70px;
+    margin-top: 50px;
+    display: flex;
+    width: 100%;
+    gap: 80px;
+}
+
+/* estilização dos pilares */
+.piller1{
+    width: 15%;
+}
+#us{
+    margin-top: 30px;
+    width:100%;
+}
+.piller2{
+    width: 15%;
+}
+#basetech{
+    margin-top: 30px;
+    width:100%;
+}
+.piller3{
+    width: 15%;
+}
+#rewards{
+    margin-top: 30px;
+    width:100%;
+}
+/* formatação da historia da empresa */
+.format-history{
+    font-family: Arial, Helvetica, sans-serif;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 80px;
+    margin-top: 50px;
+    display: flex;
+    width: 100%;
+}
+/* estilização das colunas */
+.column1{
+    justify-content: center;
+    margin-left: 55px;
+    font-size:20px;
+    display: flex;
+    width: 90%;
+    gap: 35px;
+}
+.content1{
+   
+    width: 25%;
+}
+#p1{
+    justify-content: center;
+    border-radius: 30px;
+    display: flex;
+    width: 40%;
+}
+
+.column2{
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin-left: 55px;
+    font-size:20px;
+    display: flex;
+    width: 90%;
+    gap: 35px;
+}
+.content2{
+
+    width:25%;
+}
+#p2{
+    justify-content: center;
+    border-radius: 30px;
+    display: flex;
+    width: 40%;
+}
+
+.column3{
+    justify-content: center;
+    margin-left: 55px;
+    font-size:20px;
+    display: flex;
+    width: 90%;
+    gap: 35px;
+}
+.content3{
+    width: 25%;
+}
+#p3{
+    justify-content: center;
+    border-radius: 30px;
+    display: flex;
+    width:  40%;
+}
+
+/* formatação da coluna-marketing */
+.format-marketing{
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 70px;
+    margin-top: 50px;
+    display: flex;
+    width: 100%;
+    gap: 20px;
+}
+
+.side1{
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin-left: 25px;
+    font-size:35px;
+    display: flex;
+    width: 100%;
+    gap: 40px;
+}
+.marketing{
+    justify-content: center;
+    display: flex;
+    width: 15%;
+}
+#p4{
+    justify-content: center;
+    border-radius: 30px;
+    display: flex;
+    width: 35%;
+}
+/* formatação do destaque */
+.format-emphasis{
+    background-color: rgb(14, 13, 13);
+    justify-content: center;
+    display:flex;
+}
+/* estilização do destaque */
+.content-emphasis{
+    font-family: Segoe;
+    margin-top: 120px;
+    font-size: 40px;
+    color: white;
+    display: grid;
+    width: 35%;
+}
+.format-image{
+    justify-content: center;
+    display: flex;
+}
+#img-citacao{
+    justify-content: center;
+    border-radius: 100%;
+    margin-top: 45px;
+    margin-bottom: 55px;
+    display: flex;
+    height:60%;
+    width: 20%;
+}
+#cit{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    justify-content:center;
+    margin-bottom: 100px;
+    font-size: 25px;
+    display: flex;
+}
+
+/* footer{
+    justify-content: left;
+    margin-bottom: 100px;
+    margin-left: 300px;
+    margin-top: 30px;
+    display: grid;
+} */
+#title-footer{
+    justify-content: left;
+    margin-top: 70px;
+    font-size: 35px;
+    display: flex;
+}
+#cont1-footer{
+    margin-top: 10px;
+    width: 90%;
+}
+#cont2-footer{
+    margin-top: 100px;
+    font-size: 15px;
+    width: 80%;
+}
+
+
+
+
